@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#dcdcdc"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:background="#45ADA8"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">>
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:background="@drawable/clear_icon"
+            android:onClick="clear_list" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status_robot"
+        android:layout_width="411dp"
+        android:layout_height="30dp"
+        android:background="#45ADA8"
+        android:padding="5dp"
+        android:text="Status"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/data_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background=" #547980 "
+        android:orientation="horizontal"
+        android:text="mine_destroyer" />
+
+        />
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="391dp"
+        android:layout_height="444dp"
+        android:background="#d4c5b8"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00bfff"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">>
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="@drawable/back_home"
+            android:onClick="back_home"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/show_dialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="@drawable/buzzer_button"
+            android:onClick="onClickWrite"
+            android:text="Buzzer" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="@drawable/fund_button"
+            android:text="Mines" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:onClick="changestateButton"
+        android:text="start/stop" />
+
+
+
+</LinearLayout>
